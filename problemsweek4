@@ -1,0 +1,310 @@
+#include <iostream>
+using namespace std;
+
+/*
+// Problem 1:
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    if (number >= 0) {
+        cout << "Positive number" << endl;
+    } else {
+        cout << "Negative number" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 2:
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    if (number % 2 == 0) {
+        cout << "Even number" << endl;
+    } else {
+        cout << "Odd number" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 3:
+
+int main() {
+    int num1, num2;
+    cout << "Enter a number: ";
+    cin >> num1;
+    cout << "Enter a number: ";
+    cin >> num2;
+    if (num1 > num2) {
+        cout << "Largest number is " << num1 << endl;
+    } else {
+        cout << "Largest number is " << num2 << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 4:
+int main() {
+    int num1, num2, num3;
+    cout << "Enter three numbers: ";
+    cin >> num1 >> num2 >> num3;
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            cout << "Largest number is " << num1 << endl;
+        } else {
+            cout << "Largest number is " << num3 << endl;
+        }
+    } else {
+        if (num2 >= num3) {
+            cout << "Largest number is " << num2 << endl;
+        } else {
+            cout << "Largest number is " << num3 << endl;
+        }
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 5:
+int main() {
+    int year;
+    cout << "Enter a year: ";
+    cin >> year;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        cout << "Leap year" << endl;
+    } else {
+        cout << "Not a leap year" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 6:
+int main() {
+    int speed;
+    cout << "Enter the speed of the vehicle: ";
+    cin >> speed;
+    if (speed < 20) {
+        cout << "Too slow" << endl;
+    } else if (speed > 80) {
+        cout << "Too fast" << endl;
+    } else {
+        cout << "Just right" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+//Problem 7:
+int main()
+{
+    int mark;
+    cout << "Enter your mark: ";
+    cin >> mark;
+    if (mark >= 50) {
+        cout << "Pass" << endl;
+    } else {
+        cout << "Fail" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 8:
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    if (number > 0) {
+        cout << "Positive" << endl;
+    } else if (number < 0) {
+        cout << "Negative" << endl;
+    } else {
+        cout << "Zero" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 9: Traffic light commands
+int main() {
+    char light;
+    cout << "Enter traffic light signal (g/y/r): ";
+    cin >> light;
+    if (light == 'g') {
+        cout << "Go!" << endl;
+    } else if (light == 'y') {
+        cout << "Get ready!" << endl;
+    } else if (light == 'r') {
+        cout << "Stop" << endl;
+    } else {
+        cout << "Invalid input" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+// Problem 10:
+int main() {
+    int marks;
+    cout << "Enter your mark: ";
+    cin >> marks;
+    if (marks >= 90) {
+        cout << "A" << endl;
+    } else if (marks >= 80) {
+        cout << "B" << endl;
+    } else if (marks >= 70) {
+        cout << "C" << endl;
+    } else if (marks >= 60) {
+        cout << "D" << endl;
+    } else {
+        cout << "F" << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+//Problem 11:
+int main() {
+    int num1, num2;
+    cout << "Enter a number: ";
+    cin >> num1;
+    cout << "Enter a number: ";
+    cin >> num2;
+    if (num2 != 0 && num1 % num2 == 0) {
+        cout << num1 << " is divisible by " << num2 << endl;
+    } else if (num2 != 0) {
+        cout << num1 << " is not divisible by " << num2 << endl;
+    } else {
+        cout << "Division by zero is not allowed." << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+//Problem 12:
+int main() {
+    int angle1, angle2, angle3;
+    cout << "Enter three angles of the triangle: ";
+    cin >> angle1 >> angle2 >> angle3;
+    if (angle1 + angle2 + angle3 == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+        cout << "The triangle is valid." << endl;
+    } else {
+        cout << "The triangle is not valid." << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+Problem 13: Character Case Check
+
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    if (ch >= 97 && ch <= 122) {
+        cout << "Lowercase alphabet." << endl;
+    } else if (ch >= 65 && ch <= 90) {
+        cout << "Uppercase alphabet." << endl;
+    } else {
+        cout << "It is not an alphabet." << endl;
+    }
+
+    return 0;
+}
+*/
+
+/*
+//Problem 14: Compare Package Costs
+int main() {
+    double weight1, price1, weight2, price2;
+    cout << "Enter weight and price for package 1: ";
+    cin >> weight1 >> price1;
+    cout << "Enter weight and price for package 2: ";
+    cin >> weight2 >> price2;
+    double cost1 = price1 / weight1;
+    double cost2 = price2 / weight2;
+    if (cost1 < cost2) {
+        cout << "Package 1 has a better price." << endl;
+    } else if (cost2 < cost1) {
+        cout << "Package 2 has a better price." << endl;
+    } else {
+        cout << "Two packages have the same price." << endl;
+    }
+    return 0;
+}
+*/
+
+/*
+//Problem 15
+int main() {
+    int num;
+    cout << "Enter a three-digit integer: ";
+    cin >> num;
+    int firstDigit = num / 100;
+    int lastDigit = num % 10;
+    if (firstDigit == lastDigit) {
+        cout << num << " is a palindrome." << endl;
+    } else {
+        cout << num << " is not a palindrome." << endl;
+    }
+
+    return 0;
+}
+*/
+
+/*
+//Problem 16
+
+int main() {
+    int x, y;
+      cout << "Enter the coordinates (x, y): ";
+    cin >> x >> y;
+    if (x * x + y * y <= 100) { // Compare with radius squared (10^2)
+    cout << "Point (" << x << ", " << y << ") is in the circle." << endl;
+        } else {
+     cout << "Point (" << x << ", " << y << ") is not in the circle." << endl;
+    }
+    return 0;
+}
+*/
+
+
+//Problem 17
+
+int main() {
+    double gpa;
+    cout << "Enter your GPA (0-4.5): ";
+    cin >> gpa;
+    int a = gpa * 10;
+    switch (a) {
+    case 40 ... 45:
+        cout << "You got 80% scholarship." << endl;
+        break;
+    case 35 ... 39:
+        cout << "You got 60% scholarship." << endl;
+        break;
+    case 30 ... 34:
+        cout << "You got 50% scholarship." << endl;
+        break;
+    default:
+        cout << "No scholarship." << endl;
+    }
+    return 0;
+}
